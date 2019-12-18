@@ -1,0 +1,2 @@
+- name: start tomcat
+  command: /usr/local/apache-tomcat-9.0.10/bin/catalina.sh start
