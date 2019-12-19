@@ -24,8 +24,8 @@
   become: yes
   become_method: sudo
   service: name=ndbd enabled=yes state=started
-#- name: Initialize ndbd
- # become: yes
- # become_method: sudo
- # command: var/tmp/mysql/my.cnf --initial creates=/var/tmp/mysql/data/ndbinfo
+- name: Initialize ndbd
+  become: yes
+  become_method: sudo
+  command: var/tmp/mysql/my.cnf --initial creates=/var/tmp/mysql/data/ndbinfo
  
